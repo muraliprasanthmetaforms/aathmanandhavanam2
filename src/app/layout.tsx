@@ -43,12 +43,19 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: '/images/logo.png',
-    shortcut: '/images/logo.png',
-    apple: '/images/logo.png',
-    other: {
-      rel: 'icon',
+    icon: [
+      {
+        url: '/images/logo.png',
+        sizes: '32x32',
+      },
+      {
+        url: '/images/logo.png',
+        sizes: '16x16',
+      },
+    ],
+    apple: {
       url: '/images/logo.png',
+      sizes: '180x180',
     },
   },
   alternates: {
